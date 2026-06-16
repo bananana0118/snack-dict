@@ -49,7 +49,6 @@ erDiagram
     text name
     bigint brand_id FK
     bigint category_id FK
-    text flavor
     int price
     text description
     text image_url
