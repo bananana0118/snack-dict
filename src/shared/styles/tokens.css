@@ -1,0 +1,53 @@
+:root {
+  --snack-dict-color-white: #ffffff;
+
+  --snack-dict-color-gray-10: #f7f5f5;
+  --snack-dict-color-gray-20: #edebeb;
+  --snack-dict-color-gray-30: #d9d7d7;
+  --snack-dict-color-gray-40: #bdbbbb;
+  --snack-dict-color-gray-50: #999493;
+  --snack-dict-color-gray-70: #5c5554;
+  --snack-dict-color-gray-90: #2e1515;
+
+  --snack-dict-color-system-error: #ff3b30;
+  --snack-dict-color-system-normal: #007aff;
+
+  --snack-dict-color-category-chocolate: #ff7474;
+  --snack-dict-color-category-chocolate-text: #b32828;
+  --snack-dict-color-category-pie: #f6e33b;
+  --snack-dict-color-category-pie-text: #9d8a00;
+  --snack-dict-color-category-biscuit: #37e44e;
+  --snack-dict-color-category-biscuit-text: #008b00;
+  --snack-dict-color-category-bag: #55bbff;
+  --snack-dict-color-category-bag-text: #096fb3;
+  --snack-dict-color-category-candy-gum: #a477ff;
+  --snack-dict-color-category-candy-gum-text: #6437bf;
+  --snack-dict-color-category-jelly: #ff8ee7;
+  --snack-dict-color-category-jelly-text: #b3429b;
+
+  --snack-dict-color-taste-sweet: #ff64a7;
+  --snack-dict-color-taste-sour: #56c110;
+  --snack-dict-color-taste-salty: #00accf;
+  --snack-dict-color-taste-spicy: #e62626;
+  --snack-dict-color-taste-bitter: #622616;
+  --snack-dict-color-taste-rich: #c0a000;
+
+  --snack-dict-button-radius: 0;
+  --snack-dict-button-height-sm: 2.25rem;
+  --snack-dict-button-height-md: 2.75rem;
+  --snack-dict-button-height-lg: 3.25rem;
+  --snack-dict-button-size-icon: 2.75rem;
+  --snack-dict-button-min-width-full: 21.5rem;
+  --snack-dict-button-action-group-max-width: 21.5rem;
+  --snack-dict-button-padding-inline-sm: 0.875rem;
+  --snack-dict-button-padding-inline-md: 1.25rem;
+  --snack-dict-button-padding-inline-lg: 1.5rem;
+  --snack-dict-button-gap-sm: 0.375rem;
+  --snack-dict-button-gap-md: 0.5rem;
+  --snack-dict-button-gap-lg: 0.625rem;
+  --snack-dict-button-action-group-gap-single: 0.75rem;
+  --snack-dict-button-action-group-gap-dual: 0.5rem;
+  --snack-dict-button-icon-sm: 1rem;
+  --snack-dict-button-icon-md: 1.25rem;
+  --snack-dict-button-icon-lg: 1.5rem;
+}

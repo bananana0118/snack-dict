@@ -1,0 +1,48 @@
+:root {
+  --snack-dict-font-family-sans: var(--font-pretendard);
+
+  --snack-dict-font-weight-regular: 400;
+  --snack-dict-font-weight-medium: 500;
+  --snack-dict-font-weight-semibold: 600;
+  --snack-dict-font-weight-bold: 700;
+
+  --snack-dict-text-caption-size: 0.6875rem;
+  --snack-dict-text-caption-line-height: 145%;
+  --snack-dict-text-caption-letter-spacing: 0%;
+
+  --snack-dict-text-micro-size: 0.8125rem;
+  --snack-dict-text-micro-line-height: 140%;
+  --snack-dict-text-micro-letter-spacing: -0.2%;
+
+  --snack-dict-text-body-xs-size: 0.875rem;
+  --snack-dict-text-body-xs-line-height: 145%;
+  --snack-dict-text-body-xs-letter-spacing: -0.5%;
+
+  --snack-dict-text-body-sm-size: 0.9375rem;
+  --snack-dict-text-body-sm-line-height: 140%;
+  --snack-dict-text-body-sm-letter-spacing: -1%;
+
+  --snack-dict-text-body-md-size: 1.0625rem;
+  --snack-dict-text-body-md-line-height: 140%;
+  --snack-dict-text-body-md-letter-spacing: -1%;
+
+  --snack-dict-text-button-size: 1.0625rem;
+  --snack-dict-text-button-line-height: 140%;
+  --snack-dict-text-button-letter-spacing: -1px;
+
+  --snack-dict-text-title-sm-size: 1.25rem;
+  --snack-dict-text-title-sm-line-height: 130%;
+  --snack-dict-text-title-sm-letter-spacing: -0.5%;
+
+  --snack-dict-text-title-md-size: 1.5rem;
+  --snack-dict-text-title-md-line-height: 130%;
+  --snack-dict-text-title-md-letter-spacing: -0.5%;
+
+  --snack-dict-text-title-lg-size: 1.75rem;
+  --snack-dict-text-title-lg-line-height: 130%;
+  --snack-dict-text-title-lg-letter-spacing: -0.5%;
+
+  --snack-dict-text-title-xl-size: 2rem;
+  --snack-dict-text-title-xl-line-height: 130%;
+  --snack-dict-text-title-xl-letter-spacing: -0.5%;
+}
