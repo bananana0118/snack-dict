@@ -10,7 +10,8 @@
     "lint:fix": "eslint . --fix",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "seed:snacks": "tsx --env-file=.env.local scripts/seed-from-public-api.ts"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": [
@@ -19,7 +20,7 @@
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.2",
-    "@supabase/supabase-js": "^2.104.0",
+    "@supabase/supabase-js": "^2.108.2",
     "@tanstack/react-query": "^5.99.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -52,7 +53,9 @@
     "lint-staged": "^16.4.0",
     "playwright": "^1.59.1",
     "storybook": "^10.3.5",
+    "supabase": "^2.107.0",
     "tailwindcss": "^4",
+    "tsx": "^4.22.4",
     "typescript": "^5",
     "vite": "^8.0.10",
     "vitest": "^4.1.5"
