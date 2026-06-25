@@ -35,6 +35,13 @@ Tailwind CSS, shadcn/ui, CSS Modules는 함께 사용하되 같은 스타일 속
 - `--snack-dict-*` CSS 변수 기반의 Snack Dict 디자인 시스템 스타일
 - 컴포넌트 CSS Module의 기본 클래스는 `.root`가 아니라 파일명 또는 역할명으로 작성
 
+### CSS Modules 단위 기준
+
+- 컴포넌트의 고정 UI 치수는 px 단위를 우선 사용한다.
+- 대상: `width`, `height`, `min-height`, `padding`, `margin`, `gap`, `inset`, `top`, `right`, `bottom`, `left`, 아이콘 크기.
+- 폰트 크기, line-height, letter-spacing은 직접 px/rem을 쓰지 않고 typography token을 사용한다.
+- 화면 조립용 반응형 크기나 유동 레이아웃은 Tailwind 또는 `%`, `max-width` 같은 맥락에 맞는 단위를 사용할 수 있다.
+
 ### shadcn/ui가 담당하는 영역
 
 - Radix UI 기반의 접근성, 키보드 인터랙션, primitive 동작
