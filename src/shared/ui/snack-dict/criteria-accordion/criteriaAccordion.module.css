@@ -1,0 +1,112 @@
+.criteriaAccordion {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.section {
+  padding: 16px 0 32px;
+}
+
+.section + .section {
+  border-top: 0.5px solid var(--snack-dict-color-gray-90);
+}
+
+.sectionTitle {
+  margin: 0;
+  color: var(--snack-dict-color-gray-90);
+  font-family: var(--snack-dict-font-family-sans);
+  font-size: var(--snack-dict-text-body-md-size);
+  font-weight: var(--snack-dict-font-weight-semibold);
+  line-height: var(--snack-dict-text-body-md-line-height);
+  letter-spacing: var(--snack-dict-text-body-md-letter-spacing);
+}
+
+.description {
+  margin: 8px 0 0;
+  color: var(--snack-dict-color-gray-90);
+  font-family: var(--snack-dict-font-family-sans);
+  font-size: var(--snack-dict-text-body-md-size);
+  font-weight: var(--snack-dict-font-weight-regular);
+  line-height: var(--snack-dict-text-body-md-line-height);
+  letter-spacing: var(--snack-dict-text-body-md-letter-spacing);
+  white-space: pre-line;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 5px;
+  border: 0;
+  border-radius: 0;
+  font-family: var(--snack-dict-font-family-sans);
+  font-size: var(--snack-dict-text-body-xs-size);
+  font-weight: var(--snack-dict-font-weight-medium);
+  line-height: var(--snack-dict-text-body-xs-line-height);
+  letter-spacing: var(--snack-dict-text-body-xs-letter-spacing);
+  white-space: nowrap;
+}
+
+.category {
+  background: var(--snack-dict-color-gray-10);
+}
+
+.taste {
+  color: var(--snack-dict-color-white);
+  font-weight: var(--snack-dict-font-weight-semibold);
+}
+
+.bag {
+  color: var(--snack-dict-color-category-bag-text);
+}
+
+.biscuit {
+  color: var(--snack-dict-color-category-biscuit-text);
+}
+
+.pie {
+  color: var(--snack-dict-color-category-pie-text);
+}
+
+.chocolate {
+  color: var(--snack-dict-color-category-chocolate-text);
+}
+
+.jelly {
+  color: var(--snack-dict-color-category-jelly-text);
+}
+
+.candyGum {
+  color: var(--snack-dict-color-category-candy-gum-text);
+}
+
+.sweet {
+  background: var(--snack-dict-color-taste-sweet);
+}
+
+.sour {
+  background: var(--snack-dict-color-taste-sour);
+}
+
+.salty {
+  background: var(--snack-dict-color-taste-salty);
+}
+
+.spicy {
+  background: var(--snack-dict-color-taste-spicy);
+}
+
+.bitter {
+  background: var(--snack-dict-color-taste-bitter);
+}
+
+.rich {
+  background: var(--snack-dict-color-taste-rich);
+}
