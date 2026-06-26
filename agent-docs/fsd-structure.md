@@ -111,6 +111,31 @@ import { cn } from '@/shared/lib/utils';
 import { Button } from '@/shared/ui/base/button';
 ```
 
+#### UI 컴포넌트 네이밍
+
+- UI 컴포넌트 폴더명은 역할 기준의 단일 명사 또는 kebab-case를 사용한다. 예: `button`, `input`, `image-slider`, `snack-card`.
+- 기본 컴포넌트 파일명은 폴더명과 맞춘다. 예: `src/shared/ui/snack-dict/input/input.tsx`.
+- 같은 UI 슬라이스 안에서 책임이 분리되는 보조 컴포넌트는 lower camelCase 파일명으로 분리한다.
+- 독립 스타일, Storybook, 테스트가 필요한 컴포넌트는 kebab-case 폴더로 분리하고 내부 파일은 lower camelCase를 사용할 수 있다. 예: `src/shared/ui/snack-dict/search-input/searchInput.tsx`.
+- 다단어 constants 파일은 lower camelCase basename에 `.constants.ts`를 붙인다. 예: `iconAssets.constants.ts`, `imageAssets.constants.ts`.
+- base 컴포넌트의 코드 심볼은 primitive 이름을 사용한다. 예: `Button`, `Input`.
+- Snack Dict 디자인 시스템 컴포넌트의 코드 심볼은 `SnackDict` prefix를 사용한다. 예: `SnackDictInput`, `SnackDictSearchInput`.
+- 외부 사용처는 내부 파일을 직접 import하지 않고 해당 폴더의 `index.ts` public API를 통해 import한다.
+
+#### UI 에셋 네이밍과 상수화
+
+- 반복 사용되는 정적 아이콘과 이미지 경로는 `shared/constants`의 상수로 관리한다. 예: `public/icons/*`, `public/images/*`.
+- 정적 파일 경로는 TypeScript `enum`이 아니라 `as const` 객체 registry로 관리한다.
+- 상수는 에셋의 의미가 드러나는 이름으로 작성하고, 사용처에서는 문자열 경로를 직접 쓰지 않고 registry를 참조한다.
+- 한 컴포넌트 안에서만 쓰이는 lucide 아이콘은 해당 컴포넌트 파일에서 직접 import한다. 예: 검색 입력의 `Search`, clear 버튼의 `X`.
+- 여러 컴포넌트가 같은 의미로 공유하는 아이콘 조합만 상수나 매핑으로 분리한다. 예: toast 상태 아이콘, 공통 빈 상태 아이콘.
+- 단순 경로 registry는 `{ search: "/icons/search.svg" } as const` 형태로 작성하고, key 타입은 `keyof typeof ICON_ASSETS`처럼 registry에서 파생한다.
+- 작은 장식용 정적 SVG 아이콘은 전용 아이콘 컴포넌트 안에서만 `<img alt="" aria-hidden="true">` 사용을 허용한다.
+- 크기 메타데이터가 필요한 이미지는 `{ src, width, height } as const` 형태로 관리하고, key 타입은 `keyof typeof IMAGE_ASSETS`처럼 registry에서 파생한다.
+- 이미지 registry는 기본적으로 `src`, `width`, `height` 같은 에셋 메타데이터만 관리하고, `alt`, `priority`, 렌더링 크기 같은 판단은 사용 컴포넌트에서 정한다.
+- 로고처럼 의미가 완전히 고정된 에셋만 예외적으로 registry에 기본 label을 둘 수 있다.
+- lucide-react 아이콘은 정적 파일이 아니므로 정적 에셋 registry 대상에 포함하지 않는다.
+
 #### FSD 레이어별 커스텀 컴포넌트 위치
 
 - 특정 기능에만 필요한 UI는 `src/features/[feature]/ui/`에 둔다.

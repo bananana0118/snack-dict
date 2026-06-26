@@ -104,16 +104,16 @@
 .actionGroup {
   display: flex;
   width: 100%;
-  max-width: var(--snack-dict-button-action-group-max-width);
+  max-width: var(--snack-dict-action-group-max-width);
 }
 
 .single {
   flex-direction: column;
-  gap: var(--snack-dict-button-action-group-gap-single);
+  gap: var(--snack-dict-action-group-gap-single);
 }
 
 .dual {
-  gap: var(--snack-dict-button-action-group-gap-dual);
+  gap: var(--snack-dict-action-group-gap-dual);
 }
 
 .moreButton {

@@ -19,6 +19,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 | HTML 태그, aria 속성, 이미지/비디오         | `agent-docs/a11y-performance.md` |
 | React 컴포넌트 작성, 훅 사용, TSX 타입 선언 | `agent-docs/react-tsx.md`        |
 | Storybook 관련 작업                         | `agent-docs/storybook.md`        |
+| Snack Dict 디자인 방향, 시각적 의사결정     | `agent-docs/design-guide.md`     |
 
 ## Planning Rule
 

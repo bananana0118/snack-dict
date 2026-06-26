@@ -1,0 +1,158 @@
+.searchInput {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  align-items: center;
+}
+
+.searchInput[data-active="true"] {
+  min-height: 56px;
+  gap: 8px;
+  background: var(--snack-dict-color-gray-10);
+  padding: 12px;
+}
+
+.searchLeadingIcon {
+  width: 8px;
+  height: 12px;
+  flex: 0 0 auto;
+  color: var(--snack-dict-color-gray-90);
+  pointer-events: none;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  color: var(--snack-dict-color-gray-50);
+  pointer-events: none;
+}
+
+.searchIconActive {
+  position: static;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+}
+
+.searchField {
+  padding-inline: 16px 52px;
+}
+
+.searchField::-webkit-search-decoration,
+.searchField::-webkit-search-cancel-button,
+.searchField::-webkit-search-results-button,
+.searchField::-webkit-search-results-decoration {
+  appearance: none;
+}
+
+.searchFieldActive {
+  min-height: 32px;
+  flex: 1 1 auto;
+  border-color: transparent;
+  background: transparent;
+  padding: 0;
+  font-size: var(--snack-dict-text-body-md-size);
+  font-weight: var(--snack-dict-font-weight-semibold);
+  line-height: var(--snack-dict-text-body-md-line-height);
+}
+
+.searchFieldActive:placeholder-shown {
+  font-weight: var(--snack-dict-font-weight-regular);
+}
+
+.searchFieldActive:focus-visible {
+  box-shadow: none;
+}
+
+.searchButton {
+  position: absolute;
+  right: 12px;
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--snack-dict-color-gray-70);
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.searchButton:hover {
+  background: var(--snack-dict-color-gray-20);
+  color: var(--snack-dict-color-gray-90);
+}
+
+.searchButton:focus-visible {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--snack-dict-color-system-normal) 20%, transparent);
+}
+
+.searchButton:disabled {
+  cursor: not-allowed;
+  color: var(--snack-dict-color-gray-50);
+  opacity: 0.6;
+}
+
+.searchButton:not(:disabled) {
+  cursor: pointer;
+}
+
+.searchButton img {
+  width: 24px;
+  height: 24px;
+}
+
+.searchButtonActive {
+  position: static;
+  width: 36px;
+  height: 32px;
+  flex: 0 0 36px;
+}
+
+.searchClearButton {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--snack-dict-color-gray-50);
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.searchClearButton:hover {
+  background: var(--snack-dict-color-gray-20);
+  color: var(--snack-dict-color-gray-90);
+}
+
+.searchClearButton:focus-visible {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--snack-dict-color-system-normal) 20%, transparent);
+}
+
+.searchClearButton:disabled {
+  cursor: not-allowed;
+  color: var(--snack-dict-color-gray-50);
+  opacity: 0.6;
+}
+
+.searchClearButton:not(:disabled) {
+  cursor: pointer;
+}
+
+.searchClearButton img {
+  width: 17px;
+  height: 17px;
+}

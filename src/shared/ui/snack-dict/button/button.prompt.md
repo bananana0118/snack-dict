@@ -20,8 +20,12 @@
 
 ## Figma 기준
 
-예시)
-@https://www.figma.com/design/kHqISKYkNJisLcY7YHfEqg/%EA%BD%88%EC%9E%90%EC%82%AC%EC%A0%84-Copy-?node-id=568-8493&m=dev
+Figma file key는 공개 저장소에 기록하지 않는다.
+Figma file key는 `FIGMA_SNACK_DICT_FILE_KEY` 환경변수를 기준으로 사용한다.
+`FIGMA_SNACK_DICT_FILE_KEY`를 읽을 수 없는 경우 Figma 기반 구현을 진행하지 않고, 필요한 환경변수 이름을 보고한다.
+
+Figma URL 형식:
+@https://www.figma.com/design/{FIGMA_SNACK_DICT_FILE_KEY}/%EA%BD%88%EC%9E%90%EC%82%AC%EC%A0%84-Copy-?node-id=568-8493&m=dev
 
 색상별 차이
 

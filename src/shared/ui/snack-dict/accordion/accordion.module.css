@@ -1,0 +1,71 @@
+.accordion {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  border-bottom: 1px solid var(--snack-dict-color-gray-90);
+  color: var(--snack-dict-color-gray-90);
+  font-family: var(--snack-dict-font-family-sans);
+}
+
+.item {
+  border-top: 1px solid var(--snack-dict-color-gray-90);
+}
+
+.trigger {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 0;
+  background: transparent;
+  padding: 16px 0;
+  color: var(--snack-dict-color-gray-90);
+  text-align: left;
+}
+
+.trigger:not(:disabled) {
+  cursor: pointer;
+}
+
+.trigger:focus-visible {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--snack-dict-color-system-normal) 20%, transparent);
+  outline: 0;
+}
+
+.triggerText {
+  min-width: 0;
+  font-size: var(--snack-dict-text-title-sm-size);
+  font-weight: var(--snack-dict-font-weight-bold);
+  line-height: var(--snack-dict-text-title-sm-line-height);
+  letter-spacing: var(--snack-dict-text-title-sm-letter-spacing);
+}
+
+.triggerIconBox {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 160ms ease;
+}
+
+.triggerIcon {
+  display: block;
+  width: 12px;
+  height: 8px;
+  flex: 0 0 auto;
+}
+
+.trigger[data-state="open"] .triggerIconBox {
+  transform: rotate(180deg);
+}
+
+.content {
+  overflow: hidden;
+}
+
+.contentInner {
+  border-top: 0.5px solid var(--snack-dict-color-gray-90);
+}
