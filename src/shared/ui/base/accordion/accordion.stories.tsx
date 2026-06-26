@@ -16,9 +16,14 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
+  args: {
+    type: "single",
+    defaultValue: "item-1",
+    collapsible: true,
+  },
+  render: (args) => (
     <div className="w-[343px] max-w-full">
-      <Accordion type="single" defaultValue="item-1" className="w-full" collapsible>
+      <Accordion {...args} className="w-full">
         <AccordionItem value="item-1">
           <AccordionTrigger>아코디언 제목</AccordionTrigger>
           <AccordionContent>아코디언 내용</AccordionContent>
@@ -29,9 +34,13 @@ export const Default: Story = {
 };
 
 export const Collapsed: Story = {
-  render: () => (
+  args: {
+    type: "single",
+    collapsible: true,
+  },
+  render: (args) => (
     <div className="w-[343px] max-w-full">
-      <Accordion type="single" className="w-full" collapsible>
+      <Accordion {...args} className="w-full">
         <AccordionItem value="item-1">
           <AccordionTrigger>아코디언 제목</AccordionTrigger>
           <AccordionContent>아코디언 내용</AccordionContent>

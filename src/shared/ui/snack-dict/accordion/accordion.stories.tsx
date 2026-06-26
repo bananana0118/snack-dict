@@ -21,9 +21,14 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
+  args: {
+    type: "single",
+    defaultValue: "item-1",
+    collapsible: true,
+  },
+  render: (args) => (
     <div className="w-[343px] max-w-full">
-      <SnackDictAccordion type="single" defaultValue="item-1" collapsible>
+      <SnackDictAccordion {...args}>
         <SnackDictAccordionItem value="item-1">
           <SnackDictAccordionTrigger>아코디언 제목</SnackDictAccordionTrigger>
           <SnackDictAccordionContent>
@@ -38,9 +43,13 @@ export const Default: Story = {
 };
 
 export const Collapsed: Story = {
-  render: () => (
+  args: {
+    type: "single",
+    collapsible: true,
+  },
+  render: (args) => (
     <div className="w-[343px] max-w-full">
-      <SnackDictAccordion type="single" collapsible>
+      <SnackDictAccordion {...args}>
         <SnackDictAccordionItem value="item-1">
           <SnackDictAccordionTrigger>아코디언 제목</SnackDictAccordionTrigger>
           <SnackDictAccordionContent>
@@ -55,9 +64,14 @@ export const Collapsed: Story = {
 };
 
 export const MultipleItems: Story = {
-  render: () => (
+  args: {
+    type: "single",
+    defaultValue: "item-1",
+    collapsible: true,
+  },
+  render: (args) => (
     <div className="w-[343px] max-w-full">
-      <SnackDictAccordion type="single" defaultValue="item-1" collapsible>
+      <SnackDictAccordion {...args}>
         <SnackDictAccordionItem value="item-1">
           <SnackDictAccordionTrigger>첫 번째 기준</SnackDictAccordionTrigger>
           <SnackDictAccordionContent>

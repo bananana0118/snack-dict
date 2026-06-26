@@ -75,7 +75,7 @@ function SnackDictSearchInput({
         value={value}
         {...props}
       />
-      {active && hasValue ? (
+      {active && hasValue && onClear ? (
         <button
           data-slot="snack-dict-search-clear-button"
           type="button"
